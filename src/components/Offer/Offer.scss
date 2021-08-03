@@ -46,6 +46,10 @@
 	padding: 1rem 1.5rem;
 	cursor: pointer;
 
+	@include for-phone-only {
+		margin: 1rem 0;
+	}
+
 	a {
 		text-decoration: none;
 		color: currentColor;
