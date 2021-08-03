@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/slangin/static/css/main.176ec8bd.chunk.css",
+    "main.js": "/slangin/static/js/main.1f7fa0fb.chunk.js",
+    "main.js.map": "/slangin/static/js/main.1f7fa0fb.chunk.js.map",
+    "runtime-main.js": "/slangin/static/js/runtime-main.2b91f96f.js",
+    "runtime-main.js.map": "/slangin/static/js/runtime-main.2b91f96f.js.map",
+    "static/js/2.4022aa1d.chunk.js": "/slangin/static/js/2.4022aa1d.chunk.js",
+    "static/js/2.4022aa1d.chunk.js.map": "/slangin/static/js/2.4022aa1d.chunk.js.map",
+    "index.html": "/slangin/index.html",
+    "static/css/main.176ec8bd.chunk.css.map": "/slangin/static/css/main.176ec8bd.chunk.css.map",
+    "static/js/2.4022aa1d.chunk.js.LICENSE.txt": "/slangin/static/js/2.4022aa1d.chunk.js.LICENSE.txt",
+    "static/media/Tint.scss": "/slangin/static/media/dark-car.78dd66df.jpg",
+    "static/media/slangin-1.98b4963d.png": "/slangin/static/media/slangin-1.98b4963d.png",
+    "static/media/slangin-2.ce93bad2.png": "/slangin/static/media/slangin-2.ce93bad2.png",
+    "static/media/slangin-3.b8a99ae7.png": "/slangin/static/media/slangin-3.b8a99ae7.png",
+    "static/media/slangin-4.cbe4e282.png": "/slangin/static/media/slangin-4.cbe4e282.png",
+    "static/media/slangin-5.9ae9ef0d.png": "/slangin/static/media/slangin-5.9ae9ef0d.png",
+    "static/media/slangin.519b1b67.svg": "/slangin/static/media/slangin.519b1b67.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2b91f96f.js",
+    "static/js/2.4022aa1d.chunk.js",
+    "static/css/main.176ec8bd.chunk.css",
+    "static/js/main.1f7fa0fb.chunk.js"
+  ]
+}
