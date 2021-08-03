@@ -1,0 +1,167 @@
+@import "../../sassStyles/variables";
+@import "../../sassStyles/mixins";
+
+.main-nav {
+	width: 100%;
+	height: 56px;
+	background-color: $bg-dark;
+	border-top: 1px solid #181818;
+	border-bottom: 1px solid #181818;
+	color: $text-light;
+	display: flex;
+	align-items: center;
+	position: sticky;
+	top: 0;
+	z-index: 100;
+
+	&::after {
+		height: 3px;
+		width: 100%;
+		position: absolute;
+		content: "";
+		bottom: -1px;
+		background-color: $slangin-yellow;
+	}
+
+	.container {
+		height: 100%;
+		display: flex;
+		justify-content: space-between;
+
+		img {
+			display: none;
+
+			@include for-phone-only {
+				height: 35px;
+				margin: auto 0;
+				display: block;
+			}
+		}
+
+		.menu-icon {
+			height: 100%;
+			width: 45px;
+			font-size: 28px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			display: none;
+
+			@include for-phone-only {
+				display: flex;
+			}
+		}
+
+		.page-links {
+			display: flex;
+			list-style: none;
+			height: 100%;
+
+			@include for-phone-only {
+				display: none;
+
+				&.mobileShown {
+					display: flex;
+					position: absolute;
+					top: 100%;
+					left: 0;
+					flex-direction: column;
+					width: 100%;
+					background-color: $bg-dark;
+
+					li {
+						padding: 1rem 0;
+						background-color: $bg-dark;
+					}
+				}
+			}
+
+			li {
+				text-transform: title;
+				height: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				padding: 0 1rem;
+				cursor: pointer;
+				position: relative;
+
+				a {
+					color: $text-light;
+					text-decoration: none;
+					height: 100%;
+					width: 100%;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
+
+				&:not(:last-of-type) {
+					&::after {
+						content: "";
+						position: absolute;
+						height: 20px;
+						width: 1px;
+						background-color: $text-light;
+						right: -0.5px;
+					}
+				}
+
+				&:hover {
+					background-color: #0f0f0f;
+				}
+			}
+		}
+
+		.links {
+			display: flex;
+			align-items: center;
+			height: 100%;
+
+			@include for-phone-only {
+				display: none;
+			}
+
+			a {
+				height: 100%;
+				width: 100%;
+				color: $text-light;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				text-decoration: none;
+
+				&:hover {
+					color: $slangin-yellow;
+				}
+			}
+
+			.social-links {
+				margin-right: 50px;
+			}
+
+			ul {
+				display: flex;
+				align-items: center;
+				list-style: none;
+				height: 100%;
+
+				li {
+					height: 30px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					width: 30px;
+					border-radius: 5px;
+					cursor: pointer;
+					margin: 0 0.25rem;
+
+					&:hover {
+						color: $slangin-yellow;
+						background-color: #0f0f0f;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,28 @@
+@import "../../sassStyles/variables";
+
+.audio {
+	padding: 5rem 0;
+
+	h1 {
+		&:not(:first-of-type) {
+			display: inline-block;
+			border-bottom: 2px solid $slangin-yellow;
+			padding-top: 1rem;
+			margin-top: 3rem;
+			margin-bottom: 1.5rem;
+		}
+
+		a {
+			color: $text-light;
+			text-decoration: none;
+		}
+	}
+
+	h2 {
+		margin-bottom: 1rem;
+	}
+
+	p {
+		margin-bottom: 2rem;
+	}
+}

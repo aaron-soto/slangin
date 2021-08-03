@@ -1,0 +1,21 @@
+@import "../../sassStyles/variables";
+@import "../../sassStyles/mixins";
+
+.header {
+	background-color: $bg-dark;
+	color: $slangin-yellow;
+	width: 100%;
+	height: 110px;
+	display: flex;
+	align-items: center;
+
+	@include for-phone-only {
+		display: none;
+	}
+
+	.container {
+		.logo {
+			height: 60px;
+		}
+	}
+}

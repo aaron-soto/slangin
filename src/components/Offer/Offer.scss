@@ -1,0 +1,93 @@
+@import "../../sassStyles/variables";
+@import "../../sassStyles/mixins";
+
+.offer {
+	color: $text-light;
+
+	.container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding: 5rem;
+
+		@include for-phone-only {
+			padding: 0;
+			.offers {
+				.row {
+					flex-direction: column;
+				}
+			}
+		}
+	}
+}
+
+.offers {
+	width: 100%;
+	.row {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 100%;
+
+		.column {
+			display: flex;
+			flex-direction: column;
+			flex-basis: 100%;
+			flex: 1;
+		}
+	}
+}
+
+.offer-item {
+	background-color: #282828;
+	margin: 1rem 1.5rem;
+	position: relative;
+	padding: 1rem 1.5rem;
+	cursor: pointer;
+
+	a {
+		text-decoration: none;
+		color: currentColor;
+	}
+
+	&:hover {
+		background-color: #363636;
+
+		button {
+			font-size: 32px;
+		}
+	}
+
+	&:before {
+		content: "";
+		position: absolute;
+		width: 5px;
+		height: 100%;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		background-color: $slangin-yellow;
+	}
+
+	h3 {
+		font-size: 22px;
+		font-weight: 600;
+		margin-bottom: 1rem;
+	}
+
+	button {
+		position: absolute;
+		height: 32px;
+		width: 32px;
+		font-size: 24px;
+		border: none;
+		border-radius: 50%;
+		background-color: $slangin-yellow;
+		display: grid;
+		place-items: center;
+		right: 16px;
+		bottom: -16px;
+		transition: font-size 0.2s ease-out;
+	}
+}
